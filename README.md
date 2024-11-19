@@ -25,7 +25,7 @@ The dataset contains the following fields:
 ## Star Schema: Structuring the Data Warehouse
 
 - In this project, we implemented a Star Schema to structure the data warehouse. This schema organizes data into a central Fact Table linked to multiple Dimension Tables, ensuring efficient data storage, retrieval, and analysis.
-![Loading_data_into_database](./Images/Star_schema.png)
+![Star_schema](./Images/Star_schema.PNG)
 
 ## Implementation
 ### Loading data into database postgresql

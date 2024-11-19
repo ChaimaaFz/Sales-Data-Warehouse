@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_zvXQ4KQrEe-3yoMU8WmajQ" name="City" id="_tGjJ0KQrEe-3yoMU8WmajQ" label="City" dataPackage="_zzaDYKQrEe-3yoMU8WmajQ" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/Data_Sales?" dbVersionString="V9_X" Port="5432" Username="postgres" Password="enc:system.encryption.key.v1:sU1fmf+w6F6dtijqYxetpB1VF3Vdv6d2HsTiuKfHtbE=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="Data_Sales" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_zvXQ4aQrEe-3yoMU8WmajQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_zwU6MKQrEe-3yoMU8WmajQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_zwVhQKQrEe-3yoMU8WmajQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_zwVhQaQrEe-3yoMU8WmajQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_zwVhQqQrEe-3yoMU8WmajQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_zwVhQ6QrEe-3yoMU8WmajQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_zwVhRKQrEe-3yoMU8WmajQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_zwVhRaQrEe-3yoMU8WmajQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_zx8q0KQrEe-3yoMU8WmajQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_zx8q0aQrEe-3yoMU8WmajQ" tag="DB ProductVersion" value="17.1"/>
+    <taggedValue xmi:id="_zx8q0qQrEe-3yoMU8WmajQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_zvXQ4qQrEe-3yoMU8WmajQ" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_zzaDYKQrEe-3yoMU8WmajQ" name="Data_Sales" dataManager="_zvXQ4KQrEe-3yoMU8WmajQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_zzaDYaQrEe-3yoMU8WmajQ" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_zzaDYqQrEe-3yoMU8WmajQ" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_zzaDY6QrEe-3yoMU8WmajQ" name="public">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_DiqxkKQsEe-3yoMU8WmajQ" name="dim_city" id="_DiqKgKQsEe-3yoMU8WmajQ" label="dim_city" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_DiqxkaQsEe-3yoMU8WmajQ" name="city_is" label="city_is" length="10" sourceType="SERIAL" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="_DiqxkqQsEe-3yoMU8WmajQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_DirYoKQsEe-3yoMU8WmajQ" body="nextval('dim_city_city_is_seq'::regclass)" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_DirYoaQsEe-3yoMU8WmajQ" name="SERIAL" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_DirYoqQsEe-3yoMU8WmajQ" name="city_name" label="city_name" length="20" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_DirYo6QsEe-3yoMU8WmajQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_DirYpKQsEe-3yoMU8WmajQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_DirYpaQsEe-3yoMU8WmajQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

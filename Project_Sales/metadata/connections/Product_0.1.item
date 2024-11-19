@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_kHsDUKQpEe-3yoMU8WmajQ" name="Product" id="_UOmDsKQpEe-3yoMU8WmajQ" label="Product" dataPackage="_kLvc4KQpEe-3yoMU8WmajQ" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/Data_Sales?" dbVersionString="V9_X" Port="5432" Username="postgres" Password="enc:system.encryption.key.v1:+c75VL+Ay1royNdSh2/+/yDTqB4xHZ354NOAw6BD5eM=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="Data_Sales" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_kHsDUaQpEe-3yoMU8WmajQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_kJAR8KQpEe-3yoMU8WmajQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_kJA5AKQpEe-3yoMU8WmajQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_kJA5AaQpEe-3yoMU8WmajQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_kJA5AqQpEe-3yoMU8WmajQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_kJA5A6QpEe-3yoMU8WmajQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_kJA5BKQpEe-3yoMU8WmajQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_kJA5BaQpEe-3yoMU8WmajQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_kKjxIKQpEe-3yoMU8WmajQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_kKjxIaQpEe-3yoMU8WmajQ" tag="DB ProductVersion" value="17.1"/>
+    <taggedValue xmi:id="_kKjxIqQpEe-3yoMU8WmajQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_kHsDUqQpEe-3yoMU8WmajQ" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_kLvc4KQpEe-3yoMU8WmajQ" name="Data_Sales" dataManager="_kHsDUKQpEe-3yoMU8WmajQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_kLvc4aQpEe-3yoMU8WmajQ" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_kLvc4qQpEe-3yoMU8WmajQ" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_kLvc46QpEe-3yoMU8WmajQ" name="public">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_mwq3wKQpEe-3yoMU8WmajQ" name="dim_product" id="_mwppoKQpEe-3yoMU8WmajQ" label="dim_product" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_mwq3waQpEe-3yoMU8WmajQ" name="product_id" label="product_id" length="10" sourceType="SERIAL" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="_mwq3wqQpEe-3yoMU8WmajQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_mwq3w6QpEe-3yoMU8WmajQ" body="nextval('dim_product_product_id_seq'::regclass)" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_mwq3xKQpEe-3yoMU8WmajQ" name="SERIAL" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_mwq3xaQpEe-3yoMU8WmajQ" name="product_name" label="product_name" length="50" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_mwq3xqQpEe-3yoMU8WmajQ" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_mwq3x6QpEe-3yoMU8WmajQ" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_mwq3yKQpEe-3yoMU8WmajQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

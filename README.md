@@ -22,6 +22,11 @@ The dataset contains the following fields:
 - **Talend**: ETL (Extract, Transform, Load) tool used for data integration and processing.
 - **Power BI**: Data visualization tool used to create interactive dashboards and reports.
 
+## Star Schema: Structuring the Data Warehouse
+
+- In this project, we implemented a Star Schema to structure the data warehouse. This schema organizes data into a central Fact Table linked to multiple Dimension Tables, ensuring efficient data storage, retrieval, and analysis.
+![Loading_data_into_database](./Images/Star_schema.png)
+
 ## Implementation
 ### Loading data into database postgresql
 - We loaded our Excel file into a database
@@ -36,6 +41,7 @@ The dataset contains the following fields:
 - **tUniqRow_1**: Eliminated data redundancy by filtering unique rows.
 - **Date**: Used as the destination for the Date Dimension table.
 - **tMap_1**: Mapped and transformed the data.
+
 ![Mapping_Date_Dimension](./Images/Map_Dim_Date.jpg)
 
 

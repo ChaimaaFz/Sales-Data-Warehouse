@@ -34,10 +34,11 @@ The dataset contains the following fields:
 
 - **Sales_Data**: Used as the data source.
 - **tUniqRow_1**: Eliminated data redundancy by filtering unique rows.
+- **Date**: Used as the destination for the Date Dimension table.
 - **tMap_1**: Mapped and transformed the data.
 ![Mapping_Date_Dimension](./Images/Map_Dim_Date.jpg)
 
-- **Date**: Used as the destination for the Date Dimension table.
+
 
 - We did the same for other dimension tables
 
